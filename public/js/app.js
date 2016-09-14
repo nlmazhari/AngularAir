@@ -3,16 +3,16 @@ angular.module('airline', ['airlineServices'])
 
 function airlineRouter ($routeProvider) {
 	$routeProvider
-		.when('/', {templateUrl: 'AngularAir/public/partials/destinations.html',
+		.when('/', {templateUrl: 'partials/destinations.html',
 		 controller: 'DestinationsCtrl'})
 		.when('/airports/:airportCode', {
-		 templateUrl: 'AngularAir/public/partials/airport.html',
+		 templateUrl: 'partials/airport.html',
 		 controller: 'AirportCtrl'
 		})
 		.when('/flights', {
-		 templateUrl: 'AngularAir/public/partials/flights.html',
+		 templateUrl: 'partials/flights.html',
 		 controller: 'FlightsCtrl'})
 		.when('/reservations', {
-		 templateUrl: 'AngularAir/public/partials/reservations.html',
+		 templateUrl: 'partials/reservations.html',
 		 controller: 'ReservationsCtrl'});
 }
